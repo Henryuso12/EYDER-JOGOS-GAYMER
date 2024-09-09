@@ -1,0 +1,80 @@
+/* Estilos gerais para o corpo */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: #000022; /* Cor de fundo escura como o espaço */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para os passos */
+.passo {
+    display: none; /* Oculta todas as seções inicialmente */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    margin-bottom: 20px;
+}
+
+.passo.ativo {
+    display: block; /* Mostra a seção ativa */
+}
+
+/* Estilos para as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para os botões */
+.btn-proximo {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0077ff; /* Azul espacial */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-proximo:hover {
+    background-color: #005bb5; /* Azul mais escuro ao passar o mouse */
+}
+
+.btn-proximo:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.5); /* Destaque ao focar */
+}
+
+/* Estilos para os parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilos para os títulos */
+h1, h2, h3 {
+    color: #ffffff; /* Títulos em branco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para destacar os títulos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-proximo {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
